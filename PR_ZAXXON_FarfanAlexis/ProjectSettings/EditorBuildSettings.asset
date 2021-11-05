@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: 4c07953256ce6d9479d5e1a86d7c127b
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 5662f4c1050469e46b1e68073b0e546d
+  - enabled: 1
+    path: Assets/Scenes/HallOfFame.unity
+    guid: 5c84b08ff2f4f264f8ba59a82936b717
   m_configObjects: {}
