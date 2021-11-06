@@ -21,7 +21,7 @@ public class Inicio : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
-    public void IniciarHallOfFame()
+    public void IniciarRanking()
     {
        
 
