@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Rosca_Mover : MonoBehaviour
 {
-    [SerializeField] float speed = 10f;
+    [SerializeField] float speed = 1f;
     float posZ;
     // Start is called before the first frame update
     void Start()
