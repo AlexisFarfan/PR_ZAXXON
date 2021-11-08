@@ -5,7 +5,7 @@ using UnityEngine;
 public class Nave : MonoBehaviour
 {
     private Vector3 InitPos = new Vector3(0, 4.95f, 0);
-    [SerializeField] float speed = 15f;
+    [SerializeField] float speed = 20f;
 
 
     // Start is called before the first frame update
@@ -18,16 +18,39 @@ public class Nave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moverY = Input.GetAxis("Vertical") * speed;
-        transform.Translate(Vector3.up * moverY * Time.deltaTime);
+        
+        MoverNave();
+        
+    }
+
+    void MoverNave()
+    {
+
+        float posX = transform.position.x;
+        float desplX = Input.GetAxis("Horizontal");
+        float posY = transform.position.y;
+        float desplY = Input.GetAxis("Vertical");
 
 
-        float moverX = Input.GetAxis("Horizontal") * speed;
-        transform.Translate(Vector3.left * moverX * Time.deltaTime);
+        if (posX < 18 && posX > -18 || desplX > 0 && posX < -18 || posX > 18 && desplX < 0)
+        {
+            transform.Translate(Vector3.right * Time.deltaTime * speed * desplX, Space.World);
+
+        }
+
+
+        if (posY < 12 && posY > 0.7 || desplY > 0 && posY < 0.7 || posY > 12 && desplY < 0)
+        {
+            transform.Translate(Vector3.up * speed * Time.deltaTime * desplY, Space.World);
+
+        }
+        transform.rotation = Quaternion.Euler(desplY * -20, 0, desplX * -20);
 
         if (Input.GetButton("Fire1"))
         {
             print("disparo");
         }
+
+
     }
 }
