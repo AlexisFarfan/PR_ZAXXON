@@ -20,7 +20,7 @@ public class Nave : MonoBehaviour
     {
         
         MoverNave();
-        
+        speed = speed + 0.0008f;
     }
 
     void MoverNave()

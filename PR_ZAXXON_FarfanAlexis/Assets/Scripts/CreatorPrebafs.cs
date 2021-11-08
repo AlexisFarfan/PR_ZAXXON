@@ -8,21 +8,63 @@ public class CreatorPrebafs : MonoBehaviour
     [SerializeField] Transform PosicionInicial;
     Vector3 NewPos;
 
+    float randomX;
+    float randomY;
+    float separacion;
+    float distancia;
+
     // Start is called before the first frame update
     void Start()
     {
-        for(int n = 0; n <30; n++)
-        {
-            int x = Random.Range (-18, 18);
-            int y = Random.Range(1, 10);
-            Vector3 CambioPos = new Vector3(x, y, 0);
-            NewPos = PosicionInicial.position + CambioPos;
-            Instantiate(MyPrefabs, NewPos, Quaternion.identity);
-          
-        }
-
+        InicioBolas();
+        StartCoroutine("Bucle");
         
     }
 
-   
+    void CrearBolas()
+    {
+        randomX = Random.Range(-18f, 18f);
+        randomY = Random.Range(0, 12);
+        Vector3 initPos = new Vector3(randomX, randomY, 0);
+        Vector3 NewPos = PosicionInicial.position + initPos;
+
+        //que no lo gire
+        Instantiate(MyPrefabs, NewPos, Quaternion.identity);
+
+
+
+    }
+
+
+
+   void InicioBolas()
+    {
+
+        for (int n = 15; n < 15; n++)
+        {
+            int x = Random.Range(-18, 18);
+            int y = Random.Range(0, 12);
+            Vector3 CambioPos = new Vector3(x, y, 0);
+            Vector3 NewPos = PosicionInicial.position + CambioPos;
+            Instantiate(MyPrefabs, NewPos, Quaternion.identity);
+
+        }
+    }
+
+    IEnumerator Bucle()
+    {
+        while (true)
+        {
+
+
+            CrearBolas();
+            yield return new WaitForSeconds(0.09f - 0.005f);
+
+
+        }
+
+
+    }
+
+
 }
