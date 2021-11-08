@@ -51,6 +51,12 @@ public class Nave : MonoBehaviour
             print("disparo");
         }
 
-
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        //print("choque");
+    }
+
+
 }
