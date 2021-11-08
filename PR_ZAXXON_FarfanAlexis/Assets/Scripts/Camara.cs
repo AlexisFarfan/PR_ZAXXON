@@ -24,4 +24,6 @@ public class Camara : MonoBehaviour
         transform.position = Vector3.SmoothDamp(transform.position, camPos, ref camSpeed, smoothSpeed);
 
     }
+
+
 }
