@@ -46,7 +46,7 @@ public class Nave : MonoBehaviour
         }
         transform.rotation = Quaternion.Euler(desplY * -20, 0, desplX * -20);
 
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("Fire2"))
         {
             print("disparo");
         }

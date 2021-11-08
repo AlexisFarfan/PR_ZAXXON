@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 961879842}
   - component: {fileID: 961879841}
   m_Layer: 0
-  m_Name: Play_Again
+  m_Name: BtnPlay_Again
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -524,7 +524,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 961879842}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1605863072}
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+        m_MethodName: IniciarPlayAgain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &961879842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,7 +729,7 @@ GameObject:
   - component: {fileID: 1192459755}
   - component: {fileID: 1192459754}
   m_Layer: 0
-  m_Name: Score
+  m_Name: BtnScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -785,7 +797,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1192459755}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1605863072}
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+        m_MethodName: IniciarScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1192459755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,13 +969,14 @@ GameObject:
   - component: {fileID: 1605863071}
   - component: {fileID: 1605863070}
   - component: {fileID: 1605863069}
+  - component: {fileID: 1605863072}
   m_Layer: 0
   m_Name: Game_Over
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1605863068
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1036,6 +1061,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1605863072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605863067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4de688f219a5390408c9f6c5847b7637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1644452852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1086,7 @@ GameObject:
   - component: {fileID: 1644452855}
   - component: {fileID: 1644452854}
   m_Layer: 0
-  m_Name: Home
+  m_Name: BtnHome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1117,7 +1154,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1644452855}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1605863072}
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+        m_MethodName: IniciarHome
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1644452855
 MonoBehaviour:
   m_ObjectHideFlags: 0
