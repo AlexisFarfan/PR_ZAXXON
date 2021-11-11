@@ -23,7 +23,7 @@ public class CreatorPrebafs : MonoBehaviour
 
     void CrearBolas()
     {
-        randomX = Random.Range(-18f, 18f);
+        randomX = Random.Range(-14f, 14f);
         randomY = Random.Range(0, 12);
         Vector3 initPos = new Vector3(randomX, randomY, 0);
         Vector3 NewPos = PosicionInicial.position + initPos;
@@ -42,7 +42,7 @@ public class CreatorPrebafs : MonoBehaviour
 
         for (int n = 15; n < 15; n++)
         {
-            int x = Random.Range(-18, 18);
+            int x = Random.Range(-14, 14);
             int y = Random.Range(0, 12);
             Vector3 CambioPos = new Vector3(x, y, 0);
             Vector3 NewPos = PosicionInicial.position + CambioPos;

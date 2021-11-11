@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 249132452}
   m_Layer: 0
   m_Name: PrefabGenerator
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 294716747}
   - component: {fileID: 294716746}
   m_Layer: 0
-  m_Name: Vida (1)
+  m_Name: Vida 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 455232994}
   - component: {fileID: 455232993}
   m_Layer: 0
-  m_Name: Vida
+  m_Name: Vida 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -633,8 +633,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697430675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 1, z: 20.6}
+  m_LocalPosition: {x: 0, y: 0, z: 83}
+  m_LocalScale: {x: 2.5, y: 1, z: 22.573648}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1150,7 +1150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31c07b97c2e510349beea13ee0765934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
 --- !u!4 &1220398095
 Transform:
   m_ObjectHideFlags: 0
@@ -1271,7 +1270,7 @@ GameObject:
   - component: {fileID: 1497255377}
   - component: {fileID: 1497255376}
   m_Layer: 0
-  m_Name: Vida (2)
+  m_Name: Vida 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

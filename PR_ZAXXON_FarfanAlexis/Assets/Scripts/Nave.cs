@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Nave : MonoBehaviour
 {
     private Vector3 InitPos = new Vector3(0, 4.95f, 0);
-    [SerializeField] float speed = 20f;
+    private float speed = 20f;
+
 
 
     // Start is called before the first frame update
@@ -53,6 +56,7 @@ public class Nave : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //print("choque");
+
     }
 
 
