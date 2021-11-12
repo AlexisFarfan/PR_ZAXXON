@@ -21,7 +21,7 @@ public class Disparo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire2"))
         {
             if(Time.time>shotRateTime)
             {
@@ -37,4 +37,5 @@ public class Disparo : MonoBehaviour
             }
         }
     }
+
 }

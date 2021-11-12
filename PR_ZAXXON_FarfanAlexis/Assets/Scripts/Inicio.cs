@@ -9,8 +9,8 @@ public class Inicio : MonoBehaviour
     // Start is called before the first frame update
     public void IniciarJuego()
     {
-        // configvars.numlives = 3;
-
+       
+        GameManager.playerllifes = 3;
         SceneManager.LoadScene(1);
     }
 

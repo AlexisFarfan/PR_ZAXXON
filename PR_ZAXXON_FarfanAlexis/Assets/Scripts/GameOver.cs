@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour
     public void IniciarPlayAgain()
     {
 
-
+        GameManager.playerllifes = 3;
         SceneManager.LoadScene(1);
     }
 
