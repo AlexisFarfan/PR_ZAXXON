@@ -10,14 +10,13 @@ public class CreatorPrebafs : MonoBehaviour
 
     float randomX;
     float randomY;
-    float separacion;
-    float distancia;
+   
 
     // Start is called before the first frame update
     void Start()
     {
         InicioBolas();
-        StartCoroutine("Bucle");
+        StartCoroutine("Bucle" );
         
     }
 
@@ -58,7 +57,7 @@ public class CreatorPrebafs : MonoBehaviour
 
 
             CrearBolas();
-            yield return new WaitForSeconds(0.09f - 0.005f);
+            yield return new WaitForSeconds(0.2f - 0.005f);
 
 
         }
