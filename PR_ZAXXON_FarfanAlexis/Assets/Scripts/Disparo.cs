@@ -35,7 +35,9 @@ public class Disparo : MonoBehaviour
 
                 Destroy(nuevaBala,2);
             }
+
+            
         }
     }
-
+    
 }

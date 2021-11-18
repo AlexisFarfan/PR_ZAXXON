@@ -12,6 +12,7 @@ public class Muerte : MonoBehaviour
     [SerializeField] Sprite[] lifesSprites;
     [SerializeField] GameObject Game_Over;
     [SerializeField] GameObject naveMesh;
+    public AudioSource soundInicio;
     
 
 
@@ -38,7 +39,7 @@ public class Muerte : MonoBehaviour
             GameManager.playerllifes--;
             if(GameManager.playerllifes == 0)
             {
-
+                soundInicio.enabled = false;
                 //Destroy(this.gameObject);
                 naveMesh.SetActive(false);
                 Game_Over.SetActive(true);
