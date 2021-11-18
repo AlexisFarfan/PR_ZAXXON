@@ -27,4 +27,10 @@ public class Inicio : MonoBehaviour
 
         SceneManager.LoadScene(3);
     }
+
+    public void Exit()
+    {
+        Application.Quit();
+        //Debug.Log("se cerro el juego");
+    }
 }
