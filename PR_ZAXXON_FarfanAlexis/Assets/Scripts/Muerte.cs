@@ -13,14 +13,18 @@ public class Muerte : MonoBehaviour
     [SerializeField] GameObject Game_Over;
     [SerializeField] GameObject naveMesh;
     public AudioSource soundInicio;
-    
 
+    int lifes;
 
     // Start is called before the first frame update
     void Start()
     {
         print(GameManager.playerllifes);
-        int lifes = GameManager.playerllifes;
+        if(GameManager.playerllifes==0)
+        {
+            GameManager.playerllifes = lifes;
+        }
+        lifes = GameManager.playerllifes;
         lifesImage.sprite = lifesSprites[lifes];
     }
 
